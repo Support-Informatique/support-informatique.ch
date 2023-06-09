@@ -17,10 +17,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-          cd frontend
           npm ci
 
     - name: Run ESLint
       run: |
-          cd frontend
           npm run lint
