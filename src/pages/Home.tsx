@@ -8,9 +8,7 @@
 import Page from '../components/Page'
 
 const Home: React.FC = () => {
-  return <Page title="Home">
-    <h1>abc</h1>
-  </Page>
+  return <Page title="Home"></Page>
 }
 
 export default Home
