@@ -11,9 +11,10 @@
     "lint-fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "prettier": "^2.8.8",
     "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
