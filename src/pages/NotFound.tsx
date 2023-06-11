@@ -5,7 +5,7 @@
 // functions
 
 // components
-import Page from '../components/Page'
+import Page from '@/components/Page'
 
 const NotFound: React.FC = () => {
   return (
