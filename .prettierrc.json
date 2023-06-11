@@ -9,5 +9,7 @@
   "jsxBracketSameLine": false,
   "proseWrap": "preserve",
   "endOfLine": "lf",
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "quoteProps": "as-needed",
+  "useTabs": false
 }

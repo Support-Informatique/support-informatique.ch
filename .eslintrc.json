@@ -17,7 +17,10 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "import/no-absolute-path": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/indent": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
   "settings": {
     "react": {
@@ -29,6 +32,7 @@
     "dist",
     "build",
     "postcss.config.cjs",
-    "tailwind.config.cjs"
+    "tailwind.config.cjs",
+    "vite.config.ts"
   ]
 }
