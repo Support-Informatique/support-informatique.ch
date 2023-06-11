@@ -18,7 +18,7 @@ import Hero from '@/components/sections/Hero'
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div>
       <Hero />
       {/* <SectionTitle
         subtitle='pourquoi nous'
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
       <OurTechnologies />
       <OurProjects />
       <Footer /> */}
-    </>
+    </div>
   )
 }
 
