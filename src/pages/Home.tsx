@@ -6,11 +6,26 @@
 
 // components
 import Page from '../components/Page'
+import Footer from '../components/sections/Footer'
+import Hero from '../components/sections/Hero'
+import OurClients from '../components/sections/OurClients'
+import OurProjects from '../components/sections/OurProjects'
+import OurServices from '../components/sections/OurServices'
+import OurTeam from '../components/sections/OurTeam'
+import OurTechnologies from '../components/sections/OurTechnologies'
+import WhyUs from '../components/sections/WhyUs'
 
 const Home: React.FC = () => {
   return (
     <Page title='Home'>
-      <h1>abc</h1>
+      <Hero />
+      <WhyUs />
+      <OurTeam />
+      <OurClients />
+      <OurServices />
+      <OurTechnologies />
+      <OurProjects />
+      <Footer />
     </Page>
   )
 }
