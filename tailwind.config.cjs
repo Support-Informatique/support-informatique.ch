@@ -17,8 +17,19 @@ module.exports = {
       backgroundImage: {
         'line-mountains-peak': "url('@/assets/images/line-mountains-peak.svg')",
         'line-mountains-horizon': "url('@/assets/images/line-mountains-horizon.svg')",
-      }
+      },
+      dropShadow: {
+        'button': "2px 2px 4px rgba(19, 47, 85, 0.3)",
+        "button-hover": "2px 2px 4px rgba(19, 47, 85, 0.5)"
+      },
     },
+  },
+  // This is because we define which background image to use dynamically
+  purge: {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    options: {
+      safelist: ['bg-line-mountains-peak', 'bg-line-mountains-horizon']
+    }
   },
   plugins: []
 }

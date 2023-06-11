@@ -5,6 +5,7 @@
 // functions
 
 // components
+import Button from '@/components/Button'
 import Page from '@/components/Page'
 import Footer from '@/components/sections/Footer'
 import Hero from '@/components/sections/Hero'
@@ -20,10 +21,17 @@ const Home: React.FC = () => {
   return (
     <Page title='Home'>
       <SectionTitle
-        title='Une expertise à un prix adapté'
         subtitle='pourquoi nous'
+        title='Une expertise à un prix adapté'
         background='peak'
       />
+      <SectionTitle
+        subtitle='découvrez'
+        title='Nos services'
+        background='horizon'
+      />
+      <Button text='Explorer' type='filled'/>
+      <Button text='Appelez Elwan' type='outlined'/>
       <Hero />
       <WhyUs />
       <OurTeam />

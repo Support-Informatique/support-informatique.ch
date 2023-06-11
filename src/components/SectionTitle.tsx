@@ -44,14 +44,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       >
         <span
           className={
-            'text-primary text-xs sm:text-md md:text-lg lg:text-xl uppercase font-black'
+            'text-primary text-md md:text-lg lg:text-xl uppercase font-black'
           }
         >
           {subtitle}
         </span>
         <p
           className={
-            'text-darkText text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-center'
+            'text-darkText text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-6xl font-black text-center'
           }
         >
           {title}

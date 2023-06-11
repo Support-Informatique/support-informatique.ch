@@ -9,7 +9,19 @@ const Button: React.FC<ButtonProps> = ({
   text = 'Button',
   type = 'filled'
 }) => {
-  return <button onClick={onClick}>{text}</button>
+  const customClass =
+    type === 'filled'
+      ? 'text-white bg-primary'
+      : 'text-primary border-primary border-2 bg-background'
+
+  return (
+    <button
+      className={`${customClass} drop-shadow-button rounded-lg w-fit min-w-[300px] font-black py-4 px-5 tracking-wider`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  )
 }
 
 export default Button
