@@ -4,11 +4,70 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 400;
+      src: url('../src/assets/fonts/CircularStd-Book.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 400;
+      font-style: italic;
+      src: url('../src/assets/fonts/CircularStd-BookItalic.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 500;
+      src: url('../src/assets/fonts/CircularStd-Medium.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 500;
+      font-style: italic;
+      src: url('../src/assets/fonts/CircularStd-MediumItalic.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 700;
+      src: url('../src/assets/fonts/CircularStd-Bold.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 700;
+      font-style: italic;
+      src: url('../src/assets/fonts/CircularStd-BoldItalic.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 900;
+      src: url('../src/assets/fonts/CircularStd-Black.ttf');
+  }
+
+  @font-face {
+      font-family: 'CircularStd';
+      font-weight: 900;
+      font-style: italic;
+      src: url('../src/assets/fonts/CircularStd-BlackItalic.ttf');
+  }
+}
+
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: CircularStd, Inter, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  @apply bg-background;
 }
