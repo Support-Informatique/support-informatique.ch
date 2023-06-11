@@ -9,20 +9,24 @@ module.exports = {
         darkText: '#011430',
         lightText: '#01143080',
         accentText: '#011430BF',
-        background: '#F2F4F6',
+        background: '#F2F4F6'
       },
       fontWeight: {
-        "black": "900",
+        black: '900'
       },
       backgroundImage: {
         'line-mountains-peak': "url('@/assets/images/line-mountains-peak.svg')",
-        'line-mountains-horizon': "url('@/assets/images/line-mountains-horizon.svg')",
+        'line-mountains-horizon':
+          "url('@/assets/images/line-mountains-horizon.svg')",
+        mountains: "url('@/assets/images/blue-mountains-with-lake.png')"
       },
       dropShadow: {
-        'button': "2px 2px 4px rgba(19, 47, 85, 0.3)",
-        "button-hover": "2px 2px 4px rgba(19, 47, 85, 0.5)"
-      },
-    },
+        button: '2px 2px 4px rgba(19, 47, 85, 0.3)',
+        'hero-mac': '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        'mac-topbar': '0px 2px 2px rgba(0, 0, 0, 0.15)',
+        'mac-topbar-button': '0px 2px 4px rgba(0, 0, 0, 0.1)'
+      }
+    }
   },
   // This is because we define which background image to use dynamically
   purge: {
