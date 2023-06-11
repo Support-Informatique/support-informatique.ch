@@ -22,6 +22,7 @@ const Home: React.FC = () => {
       <SectionTitle
         title='Une expertise à un prix adapté'
         subtitle='pourquoi nous'
+        background='horizon'
       />
       <Hero />
       <WhyUs />
