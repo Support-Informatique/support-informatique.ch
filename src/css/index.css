@@ -1,5 +1,7 @@
-@tailwind base; 
-@tailwind components; 
+/* To remove the VSCode unknown warning */
+/* https://www.codeconcisely.com/posts/tailwind-css-unknown-at-rules/ */
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
