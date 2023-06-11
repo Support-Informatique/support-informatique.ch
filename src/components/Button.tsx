@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${customClass} drop-shadow-button rounded-[10px] text-xl w-fit min-w-[300px] font-black py-4 px-5 tracking-widest`}
+      className={`${customClass} drop-shadow-button rounded-[10px] text-base md:text-xl w-fit min-w-[300px] font-black py-4 px-5 tracking-widest`}
       onClick={onClick}
     >
       {text}
