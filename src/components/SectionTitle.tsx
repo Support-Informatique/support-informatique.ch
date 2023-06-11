@@ -28,13 +28,13 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 
   return (
     <div
-      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-bottom bg-contain relative overflow-hidden`}
+      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-top lg:bg-bottom lg:bg-contain relative overflow`}
     >
       {bgImage && (
         <img
           src={bgImage}
           alt='bgImage'
-          className={'invisible max-w-fit min-h-[275px]'}
+          className={'invisible max-w-fit min-h-[200px] md:min-h-[275px]'}
         />
       )}
       <div
@@ -44,14 +44,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       >
         <span
           className={
-            'text-primary sm:text-md md:text-lg lg:text-xl uppercase font-black'
+            'text-primary text-xs sm:text-md md:text-lg lg:text-xl uppercase font-black'
           }
         >
           {subtitle}
         </span>
         <p
           className={
-            'text-darkText sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-center'
+            'text-darkText text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-center'
           }
         >
           {title}
