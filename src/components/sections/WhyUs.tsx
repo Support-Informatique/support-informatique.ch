@@ -1,3 +1,4 @@
+// components
 import SectionTitle from '@/components/SectionTitle'
 import Button from '@/components/Button'
 

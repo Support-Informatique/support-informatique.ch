@@ -3,12 +3,21 @@ import avatar1 from '@/assets/images/blue-avatar-1.svg'
 import avatar2 from '@/assets/images/blue-avatar-2.svg'
 import avatar3 from '@/assets/images/blue-avatar-3.svg'
 
+// components
+import { IoLogoLinkedin } from 'react-icons/io'
+import { SiTypescript } from 'react-icons/si'
+import { FaReact, FaVuejs, FaPython } from 'react-icons/fa'
+
+// types
+type Tech = 'reactjs' | 'vuejs' | 'typescript' | 'python'
+
 // interfaces
 interface TeamMemberProps {
   name: string
   title: string
-  techs: string[]
+  techs: Tech[]
   avatar: number
+  linkedin?: string
 }
 
 // functions
@@ -23,32 +32,54 @@ const getAvatar = (avatar: number) => {
   return avatar1
 }
 
+const getTechIcon = (tech: Tech) => {
+  switch (tech) {
+    case 'typescript':
+      return <SiTypescript />
+    case 'reactjs':
+      return <FaReact />
+    case 'vuejs':
+      return <FaVuejs />
+    case 'python':
+      return <FaPython />
+    default:
+      return <></>
+  }
+}
+
+const getTechIconsList = (techs: Tech[]) => {
+  return techs.map((tech, i) => <div key={i} className='text-2xl text-gray-500'>{getTechIcon(tech)}</div>)
+}
+
 const TeamMember: React.FC<TeamMemberProps> = ({
   name,
   title,
   techs,
-  avatar
+  avatar,
+  linkedin
 }) => {
   const avatarImage = getAvatar(avatar)
+  const techIconsList = getTechIconsList(techs)
 
   return (
     <div className='border border-lightText flex flex-row justify-start align-middle w-[28rem] rounded-[20px] py-4 px-6 gap-8'>
-      <img
-        src={avatarImage}
-        alt='avatar'
-        className='object-contain'
-      />
+      <img src={avatarImage} alt='avatar' className='object-contain' />
       <div className='flex flex-col justify-center'>
-        <p className='text-darkText font-bold text-xl'>{name}</p>
-        <div>
+        <p className='text-darkText font-bold text-2xl'>{name}</p>
+        <div className='flex flex-row gap-x-1'>
           <p className='text-lightText text-lg'>{title}</p>
-          <img />
+          {linkedin && (
+            <a
+              href={linkedin}
+              target='_blank'
+              rel='noreferrer'
+              className='flex flex-row gap-x-2 items-center text-secondary text-xl'
+            >
+              <IoLogoLinkedin />
+            </a>
+          )}
         </div>
-        <div className='flex flex-row gap-x-2'>
-          {techs.map((tech, i) => (
-            <p key={i}>{tech}</p>
-          ))}
-        </div>
+        <div className='flex flex-row gap-x-2 mt-2'>{techIconsList}</div>
       </div>
     </div>
   )

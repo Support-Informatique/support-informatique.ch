@@ -10,20 +10,23 @@ const OurTeam: React.FC = () => {
         <TeamMember
           name='Lionel Ding'
           title='Fondateur & Développeur'
-          techs={['tech1', 'tech2']}
+          techs={['typescript', 'vuejs']}
           avatar={1}
+          linkedin='https://www.linkedin.com/in/lionel-ding'
         />
         <TeamMember
           name='Elwan Mayencourt'
           title='Développeur'
-          techs={['tech1', 'tech2']}
+          techs={['reactjs', 'python']}
           avatar={2}
+          linkedin='https://www.linkedin.com/in/elwan-mayencourt/'
         />
         <TeamMember
           name='Alexis Stella'
           title='Développeur'
-          techs={['tech1', 'tech2']}
+          techs={['vuejs', 'reactjs']}
           avatar={3}
+          linkedin='https://www.linkedin.com/in/alexis-stella-660804201/'
         />
       </div>
     </div>
