@@ -28,7 +28,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 
   return (
     <div
-      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-top lg:bg-bottom lg:bg-contain relative overflow mb-10`}
+      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-top lg:bg-bottom lg:bg-contain relative overflow mb-10 mx-3`}
     >
       {bgImage && (
         <img

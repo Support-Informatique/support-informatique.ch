@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         alt='blured background image'
         className='hidden md:block w-full h-full object-cover object-center -translate-y-3'
       />
-      <div className='bg-mountains md:drop-shadow-hero-mac bg-top md:bg-cover md:rounded-[20px] grid md:absolute w-full md:w-9/12 h-[90vh] md:h-3/4 top-0 md:left-1/2 transform md:-translate-x-1/2 md:translate-y-20 z-10'>
+      <div className='bg-mountains md:drop-shadow-hero-mac bg-bottom md:bg-cover md:rounded-[20px] grid md:absolute w-full md:w-9/12 h-[90vh] md:h-3/4 top-0 md:left-1/2 transform md:-translate-x-1/2 md:translate-y-20 z-10'>
         <div className='hidden md:flex drop-shadow-mac-topbar absolute w-full rounded-t-[20px] h-12 bg-[#AFE3E8] items-center gap-x-3'>
           <div className='ml-3 drop-shadow-mac-topbar-button w-5 h-5 rounded-full bg-red-400' />
           <div className='drop-shadow-mac-topbar-button w-5 h-5 rounded-full bg-yellow-400' />
