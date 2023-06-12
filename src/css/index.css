@@ -6,58 +6,57 @@
 
 @layer base {
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 400;
-      src: url('@/assets/fonts/CircularStd-Book.ttf');
+    font-family: 'CircularStd';
+    font-weight: 400;
+    src: url('@/assets/fonts/CircularStd-Book.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 400;
-      font-style: italic;
-      src: url('@/assets/fonts/CircularStd-BookItalic.ttf');
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-style: italic;
+    src: url('@/assets/fonts/CircularStd-BookItalic.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 500;
-      src: url('@/assets/fonts/CircularStd-Medium.ttf');
+    font-family: 'CircularStd';
+    font-weight: 500;
+    src: url('@/assets/fonts/CircularStd-Medium.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 500;
-      font-style: italic;
-      src: url('@/assets/fonts/CircularStd-MediumItalic.ttf');
+    font-family: 'CircularStd';
+    font-weight: 500;
+    font-style: italic;
+    src: url('@/assets/fonts/CircularStd-MediumItalic.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 700;
-      src: url('@/assets/fonts/CircularStd-Bold.ttf');
+    font-family: 'CircularStd';
+    font-weight: 700;
+    src: url('@/assets/fonts/CircularStd-Bold.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 700;
-      font-style: italic;
-      src: url('@/assets/fonts/CircularStd-BoldItalic.ttf');
+    font-family: 'CircularStd';
+    font-weight: 700;
+    font-style: italic;
+    src: url('@/assets/fonts/CircularStd-BoldItalic.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 900;
-      src: url('@/assets/fonts/CircularStd-Black.ttf');
+    font-family: 'CircularStd';
+    font-weight: 900;
+    src: url('@/assets/fonts/CircularStd-Black.ttf');
   }
 
   @font-face {
-      font-family: 'CircularStd';
-      font-weight: 900;
-      font-style: italic;
-      src: url('@/assets/fonts/CircularStd-BlackItalic.ttf');
+    font-family: 'CircularStd';
+    font-weight: 900;
+    font-style: italic;
+    src: url('@/assets/fonts/CircularStd-BlackItalic.ttf');
   }
 }
-
 
 :root {
   font-family: CircularStd, Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -69,8 +68,25 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary bg-opacity-60 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-opacity-80;
+}
+
 html {
-  background-color: #B8E9EE;
+  background-color: #b8e9ee;
 }
 
 #root {
