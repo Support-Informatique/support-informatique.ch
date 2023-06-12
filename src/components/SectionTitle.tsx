@@ -44,7 +44,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       >
         <span
           className={
-            'text-primary text-base md:text-md lg:text-lg  xl:text-xl uppercase font-black'
+            'text-primary text-sm sm:text-base md:text-md lg:text-lg xl:text-xl uppercase font-black'
           }
         >
           {subtitle}
