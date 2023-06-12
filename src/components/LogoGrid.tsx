@@ -15,7 +15,7 @@ interface LogoGridProps {
 
 const LogoGrid: React.FC<LogoGridProps> = ({ className = '', logos }) => {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref) ? 1 : 0
 
   return (
     <div

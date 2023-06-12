@@ -17,6 +17,7 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "import/no-absolute-path": "off",
+    "import/no-duplicates": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/indent": "off",
     "react/prop-types": "off",
