@@ -39,7 +39,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       )}
       <div
         className={
-          'flex flex-col items-center justify-center gap-y-3 absolute w-full'
+          `flex flex-col items-center justify-center gap-y-3 ${bgImage ? 'absolute' : ''} w-full`
         }
       >
         <span
