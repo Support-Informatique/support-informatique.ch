@@ -11,6 +11,7 @@ import Hero from '@/components/sections/Hero'
 import OurServices from '@/components/sections/OurServices'
 import OurTeam from '@/components/sections/OurTeam'
 import OurClients from '@/components/sections/OurClients'
+import OurTechnologies from '@/components/sections/OurTechnologies'
 import WhyUs from '@/components/sections/WhyUs'
 import Footer from '@/components/sections/Footer'
 
@@ -29,9 +30,11 @@ const Home: React.FC = () => {
       <DefaultSpacer />
       <OurTeam />
       <DefaultSpacer />
+      <OurClients />
+      <DefaultSpacer />
       <OurServices />
       <DefaultSpacer />
-      <OurClients />
+      <OurTechnologies />
       <br></br>
       <br></br>
       <br></br>
