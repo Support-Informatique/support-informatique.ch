@@ -29,11 +29,6 @@ module.exports = {
     }
   },
   // This is because we define which background image to use dynamically
-  purge: {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
-    options: {
-      safelist: ['bg-line-mountains-peak', 'bg-line-mountains-horizon']
-    }
-  },
+  safelist: ['bg-line-mountains-peak', 'bg-line-mountains-horizon'],
   plugins: []
 }
