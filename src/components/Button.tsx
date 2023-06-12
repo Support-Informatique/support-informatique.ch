@@ -1,3 +1,7 @@
+// functions
+import { onEnter } from '@/utils/accessibility'
+
+// interfaces
 interface ButtonProps {
   onClick?: () => void
   text?: string
@@ -18,6 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`${customClass} drop-shadow-button rounded-[10px] text-base md:text-xl w-fit min-w-[300px] font-black py-4 px-5 tracking-widest`}
       onClick={onClick}
+      onKeyDown={onEnter}
     >
       {text}
     </button>
