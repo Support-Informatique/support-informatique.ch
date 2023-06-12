@@ -8,53 +8,53 @@
   @font-face {
       font-family: 'CircularStd';
       font-weight: 400;
-      src: url('../src/assets/fonts/CircularStd-Book.ttf');
+      src: url('@/assets/fonts/CircularStd-Book.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 400;
       font-style: italic;
-      src: url('../src/assets/fonts/CircularStd-BookItalic.ttf');
+      src: url('@/assets/fonts/CircularStd-BookItalic.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 500;
-      src: url('../src/assets/fonts/CircularStd-Medium.ttf');
+      src: url('@/assets/fonts/CircularStd-Medium.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 500;
       font-style: italic;
-      src: url('../src/assets/fonts/CircularStd-MediumItalic.ttf');
+      src: url('@/assets/fonts/CircularStd-MediumItalic.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 700;
-      src: url('../src/assets/fonts/CircularStd-Bold.ttf');
+      src: url('@/assets/fonts/CircularStd-Bold.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 700;
       font-style: italic;
-      src: url('../src/assets/fonts/CircularStd-BoldItalic.ttf');
+      src: url('@/assets/fonts/CircularStd-BoldItalic.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 900;
-      src: url('../src/assets/fonts/CircularStd-Black.ttf');
+      src: url('@/assets/fonts/CircularStd-Black.ttf');
   }
 
   @font-face {
       font-family: 'CircularStd';
       font-weight: 900;
       font-style: italic;
-      src: url('../src/assets/fonts/CircularStd-BlackItalic.ttf');
+      src: url('@/assets/fonts/CircularStd-BlackItalic.ttf');
   }
 }
 
