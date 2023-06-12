@@ -70,5 +70,9 @@
 }
 
 html {
+  background-color: #B8E9EE;
+}
+
+#root {
   @apply bg-background;
 }
