@@ -4,3 +4,10 @@ export const onEnter = (e: React.KeyboardEvent<HTMLButtonElement>) => {
     e.preventDefault()
   }
 }
+
+export const navigateToSection = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}

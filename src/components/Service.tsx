@@ -41,14 +41,14 @@ const Service: React.FC<ServiceProps> = ({
   const iconImg = getIcon(icon)
 
   return (
-    <div className='flex flex-col border-[1px] border-black border-opacity-20 w-4/12 rounded-lg gap-3 p-5'>
+    <div className='flex flex-col border-[1px] border-black border-opacity-20 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 rounded-lg gap-3 p-5'>
       <img
         src={iconImg}
         alt='layoutIcon'
         className='w-8 h-8 p-2 rounded-md bg-secondary'
       />
       <div className='flex flex-row gap-3 items-center'>
-        <p className='text-darkText font-bold text-2xl'>{title}</p>
+        <p className='text-darkText font-bold text-lg md:text-2xl'>{title}</p>
         {swissFlag && (
           <img
             src={swissIcon}
@@ -57,7 +57,7 @@ const Service: React.FC<ServiceProps> = ({
           />
         )}
       </div>
-      <p className='text-primary opacity-75 text-lg leading-5'>{description}</p>
+      <p className='text-primary opacity-75 text-sm md:text-lg leading-5'>{description}</p>
     </div>
   )
 }

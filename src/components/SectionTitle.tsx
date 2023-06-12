@@ -28,7 +28,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 
   return (
     <div
-      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-top lg:bg-bottom lg:bg-contain relative overflow mb-10 mx-3`}
+      className={`flex flex-col justify-end ${bgImageClass} bg-no-repeat bg-top lg:bg-bottom lg:bg-contain relative overflow mb-10`}
     >
       {bgImage && (
         <img
@@ -39,7 +39,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       )}
       <div
         className={
-          `flex flex-col items-center justify-center gap-y-3 ${bgImage ? 'absolute' : ''} w-full`
+          `flex flex-col items-center justify-center gap-y-3 ${bgImage ? 'absolute' : ''} w-full px-3`
         }
       >
         <span

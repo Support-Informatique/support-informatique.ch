@@ -2,9 +2,16 @@
 import SectionTitle from '@/components/SectionTitle'
 import Button from '@/components/Button'
 
+// utils
+import { navigateToSection } from '@/utils/accessibility'
+
 const WhyUs: React.FC = () => {
+  const scrollToOurServices = () => {
+    navigateToSection('our-services')
+  }
+
   return (
-    <>
+    <div id='why-us'>
       <SectionTitle
         subtitle='pourquoi nous'
         title='Une expertise à un prix adapté'
@@ -22,10 +29,14 @@ const WhyUs: React.FC = () => {
         numériques avec passion et expertise.
       </p>
       <div className='flex flex-row flex-wrap gap-x-16 gap-y-4 justify-center'>
-        <Button text='Nos services' type='filled' />
+        <Button
+          text='Nos services'
+          type='filled'
+          onClick={scrollToOurServices}
+        />
         <Button text='Nous contacter' type='outlined' />
       </div>
-    </>
+    </div>
   )
 }
 export default WhyUs

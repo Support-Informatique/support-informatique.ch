@@ -4,7 +4,7 @@ import Service from '@/components/Service'
 
 const OurServices: React.FC = () => {
   return (
-    <>
+    <div id="our-services">
       <SectionTitle
         subtitle='découvrez'
         title='Nos services'
@@ -33,7 +33,7 @@ const OurServices: React.FC = () => {
           description="Nous offrons un support complet pour tous vos besoins informatiques. De l'installation de matériel aux mises à jour système, nous sommes là pour vous aider."
         />
       </div>
-    </>
+    </div>
   )
 }
 export default OurServices
