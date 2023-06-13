@@ -1,10 +1,15 @@
 // components
 import SectionTitle from '@/components/utils/SectionTitle'
 import Service from '@/components/sections/ourservices/Service'
+import Button from '@/components/utils/Button'
 
 const OurServices: React.FC = () => {
+  const mailTo = () => {
+    window.open('mailto:contact@support-informatique.ch', '_blank')
+  }
+
   return (
-    <div id="our-services">
+    <div id='our-services'>
       <SectionTitle
         subtitle='découvrez'
         title='Nos services'
@@ -33,6 +38,12 @@ const OurServices: React.FC = () => {
           description="Nous offrons un support complet pour tous vos besoins informatiques. De l'installation de matériel aux mises à jour système, nous sommes là pour vous aider."
         />
       </div>
+      <Button
+        className='mx-auto mt-10'
+        type='filled'
+        text='Nous contacter'
+        onClick={mailTo}
+      />
     </div>
   )
 }

@@ -11,6 +11,7 @@ interface ButtonProps {
   type?: 'filled' | 'outlined' | 'accent'
   icon?: IconType
   size?: 'sm' | 'md'
+  className?: string
 }
 
 // functions
@@ -41,13 +42,14 @@ const Button: React.FC<ButtonProps> = ({
   text = 'Button',
   type = 'filled',
   icon = null,
-  size = 'md'
+  size = 'md',
+  className = ''
 }) => {
   const colorClass = getColorClass(type)
   const sizeClass = getSizeClass(size)
   return (
     <button
-      className={`${colorClass} ${sizeClass} z-10 drop-shadow-button w-fit px-5 tracking-widest flex flex-row justify-center items-center gap-2 transition-all duration-500`}
+      className={`${colorClass} ${sizeClass} ${className} z-10 drop-shadow-button w-fit px-5 tracking-widest flex flex-row justify-center items-center gap-2 transition-all duration-500`}
       onClick={onClick}
       onKeyDown={onEnter}
     >
