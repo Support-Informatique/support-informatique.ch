@@ -25,6 +25,6 @@ jobs:
         host: ${{ secrets.SUPPORT_INFORMATIQUE_DEPLOYMENT_HOST }}
         username: ${{ secrets.SUPPORT_INFORMATIQUE_DEPLOYMENT_USER }}
         key: ${{ secrets.SUPPORT_INFORMATIQUE_DEPLOYMENT_SSH_PRIVATE_KEY }}
-        source: "build/**"
+        source: "dist/*"
         target: ${{ vars.SUPPORT_INFORMATIQUE_DEPLOYMENT_FOLDER }}
         # strip_components: 1
