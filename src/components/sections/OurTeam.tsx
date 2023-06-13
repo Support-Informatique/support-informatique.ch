@@ -6,7 +6,7 @@ const OurTeam: React.FC = () => {
   return (
     <div>
       <SectionTitle subtitle='qui sommes nous' title='Notre équipe' />
-      <div className='flex flex-row flex-wrap justify-evenly align-middle gap-4'>
+      <div className='flex flex-row flex-wrap justify-evenly lg:justify-center align-middle gap-4'>
         <TeamMember
           name='Lionel Ding'
           title='Fondateur & Développeur'
