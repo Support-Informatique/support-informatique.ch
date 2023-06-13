@@ -9,7 +9,7 @@ module.exports = {
         darkText: '#011430',
         lightText: '#01143080',
         accentText: '#011430BF',
-        background: '#F2F4F6',
+        background: "var(--background)",
         lightCard: '#B7EFFF1F'
       },
       fontWeight: {

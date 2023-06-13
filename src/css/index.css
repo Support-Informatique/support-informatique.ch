@@ -66,15 +66,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+
+  --background: #f2f4f6;
+  --top-mountains-color: #b8e9ee;
 }
 
 @keyframes change-bg {
   from {
     background: #fff;
-  } /* or the loading screen's color */
+  }
   to {
-    background: #b8e9ee;
-  } /* or the underneath color */
+    background: var(--top-mountains-color);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -94,15 +97,10 @@
   @apply bg-opacity-80;
 }
 
-html {
-  /* @apply bg-background */
-  /* background-color: #b8e9ee; */
-}
-
 body {
   /* This is changed to auto by the loading screen */
   overflow: hidden;
-  animation-fill-mode: forwards; /* this will make the background color to stay after animation ends */
+  animation-fill-mode: forwards;
 }
 
 #root {

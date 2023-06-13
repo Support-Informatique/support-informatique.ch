@@ -2,7 +2,7 @@
 import Button from '@/components/utils/Button'
 
 const NotFound: React.FC = () => {
-  document.body.style.backgroundColor = '#F2F4F6'
+  document.body.style.backgroundColor = 'var(--background)'
 
   const goBackHome = () => {
     window.location.href = '/'
