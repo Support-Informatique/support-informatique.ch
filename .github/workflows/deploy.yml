@@ -27,4 +27,4 @@ jobs:
         key: ${{ secrets.SUPPORT_INFORMATIQUE_DEPLOYMENT_SSH_PRIVATE_KEY }}
         source: "dist/*"
         target: ${{ vars.SUPPORT_INFORMATIQUE_DEPLOYMENT_FOLDER }}
-        # strip_components: 1
+        strip_components: 1
