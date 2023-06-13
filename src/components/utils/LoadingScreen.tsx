@@ -45,10 +45,13 @@ const LoadingScreen: React.FC = () => {
   }, [heroImages])
 
   useEffect(() => {
+    document.body.style.background = '#F2F4F6'
     if (!loading) {
+      document.body.style.overflow = 'auto'
+      document.body.style.animation = 'change-bg 0.35s'
+      document.body.style.background = '#b8e9ee'
       setTimeout(() => {
         setShowOverlay(false)
-        document.body.style.overflow = 'auto'
       }, 450)
     }
   }, [loading])
