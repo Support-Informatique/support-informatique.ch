@@ -2,6 +2,8 @@
 import Button from '@/components/utils/Button'
 
 const NotFound: React.FC = () => {
+  document.body.style.backgroundColor = '#F2F4F6'
+
   const goBackHome = () => {
     window.location.href = '/'
   }
