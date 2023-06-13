@@ -1,6 +1,7 @@
 // images
 import peak from '@/assets/images/line-mountains-peak.svg'
 import horizon from '@/assets/images/line-mountains-horizon.svg'
+import Text from '@/components/Text'
 
 // interfaces
 interface SectionTitleProps {
@@ -38,24 +39,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         />
       )}
       <div
-        className={
-          `flex flex-col items-center justify-center gap-y-3 ${bgImage ? 'absolute' : ''} w-full px-3`
-        }
+        className={`flex flex-col items-center justify-center gap-y-3 ${
+          bgImage ? 'absolute' : ''
+        } w-full px-3`}
       >
-        <span
-          className={
-            'text-primary text-sm sm:text-base md:text-md lg:text-lg xl:text-xl uppercase font-black'
-          }
-        >
-          {subtitle}
-        </span>
-        <p
-          className={
-            'text-darkText text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-center'
-          }
-        >
+        <Text type='section-subtitle'>{subtitle}</Text>
+        <Text type='section-title' className={'text-center'}>
           {title}
-        </p>
+        </Text>
       </div>
     </div>
   )

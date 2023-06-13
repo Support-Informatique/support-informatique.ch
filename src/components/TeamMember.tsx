@@ -7,6 +7,7 @@ import avatar3 from '@/assets/images/blue-avatar-3.svg'
 import { IoLogoLinkedin } from 'react-icons/io'
 import { SiTypescript } from 'react-icons/si'
 import { FaReact, FaVuejs, FaPython } from 'react-icons/fa'
+import Text from '@/components/Text'
 
 // types
 type Tech = 'reactjs' | 'vuejs' | 'typescript' | 'python'
@@ -48,7 +49,11 @@ const getTechIcon = (tech: Tech) => {
 }
 
 const getTechIconsList = (techs: Tech[]) => {
-  return techs.map((tech, i) => <div key={i} className='text-2xl text-gray-500'>{getTechIcon(tech)}</div>)
+  return techs.map((tech, i) => (
+    <div key={i} className='text-2xl text-gray-500'>
+      {getTechIcon(tech)}
+    </div>
+  ))
 }
 
 const TeamMember: React.FC<TeamMemberProps> = ({
@@ -65,9 +70,11 @@ const TeamMember: React.FC<TeamMemberProps> = ({
     <div className='border border-lightText flex flex-col sm:flex-row justify-center sm:justify-start items-center w-[75vw] sm:w-[65vw] md:w-[28rem] rounded-[20px] py-4 px-6 gap-2 sm:gap-8 mx-3'>
       <img src={avatarImage} alt='avatar' className='object-contain w-3/12 ' />
       <div className='flex flex-col justify-center'>
-        <p className='text-darkText font-bold text-xl sm:text-2xl text-center sm:text-left'>{name}</p>
+        <Text type='card-title' className='text-center sm:text-left'>{name}</Text>
         <div className='flex flex-row gap-x-1 justify-center sm:justify-start'>
-          <p className='text-lightText text-md sm:text-lg text-center sm:text-left'>{title}</p>
+          <p className='text-lightText text-md sm:text-lg text-center sm:text-left'>
+            {title}
+          </p>
           {linkedin && (
             <a
               href={linkedin}
@@ -79,7 +86,9 @@ const TeamMember: React.FC<TeamMemberProps> = ({
             </a>
           )}
         </div>
-        <div className='flex flex-row gap-x-2 mt-2 justify-center sm:justify-start'>{techIconsList}</div>
+        <div className='flex flex-row gap-x-2 mt-2 justify-center sm:justify-start'>
+          {techIconsList}
+        </div>
       </div>
     </div>
   )

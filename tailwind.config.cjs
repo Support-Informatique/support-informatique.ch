@@ -19,7 +19,8 @@ module.exports = {
         'line-mountains-horizon':
           "url('@/assets/images/line-mountains-horizon.svg')",
         mountains: "url('@/assets/images/blue-mountains-with-lake.png')",
-        footer: "url('@/assets/images/blue-mountains-with-lake-footer.png')"
+        footer: "url('@/assets/images/blue-mountains-with-lake-footer.png')",
+        "footer-mobile": "url('@/assets/images/blue-mountains-with-lake-footer-mobile.png')"
       },
       dropShadow: {
         button: '2px 2px 4px rgba(19, 47, 85, 0.3)',

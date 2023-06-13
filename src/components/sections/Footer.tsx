@@ -6,18 +6,18 @@ import logo from '@/assets/images/logo-support-informatique-light.svg'
 
 const Footer: React.FC = () => {
   return (
-    <div className='bg-footer bg-cover bg-center md:bg-top'>
+    <div className='bg-footer-mobile md:bg-footer bg-cover bg-center md:bg-top'>
       <div className='flex flex-row flex-wrap justify-center gap-8'>
         <div className='w-full md:w-2/5 lg:w-1/4 px-8 md:px-0 flex flex-col justify-center items-start pt-16 pb-2 md:pb-16 gap-y-2 text-white'>
           <img
             src={logo}
             alt='logo'
-            className='mx-auto md:mx-0 w-52 md:w-40 mb-8 pointer-events-none'
+            className='mx-auto md:mx-0 w-52 md:w-40 my-12 pointer-events-none'
           />
           <h3 className='font-bold text-lg md:text-2xl uppercase'>
             Contactez-nous
           </h3>
-          <p>
+          <p className='text-sm md:text-base'>
             N&apos;hésitez pas à prendre contact avec nous via notre adresse
             mail, nous vous répondrons dans les plus brefs délais.
           </p>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className='bg-background w-full p-2'>
-        <p className='text-darkText font-black text-center text-sm md:text-base'>
+        <p className='text-darkText font-bold md:font-black text-center text-sm md:text-base'>
           © 2023 Support-Informatique - All Rights Reserved.
         </p>
       </div>

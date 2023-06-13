@@ -4,6 +4,7 @@ import codeIcon from '@/assets/images/icon-code.svg'
 import cloudIcon from '@/assets/images/icon-cloud.svg'
 import helpIcon from '@/assets/images/icon-help.svg'
 import swissIcon from '@/assets/images/icon-swiss.png'
+import Text from '@/components/Text'
 
 // type
 type Icon = 'layout' | 'code' | 'cloud' | 'help'
@@ -48,7 +49,7 @@ const Service: React.FC<ServiceProps> = ({
         className='w-8 h-8 p-2 rounded-md bg-secondary'
       />
       <div className='flex flex-row gap-3 items-center'>
-        <p className='text-darkText font-bold text-lg md:text-2xl'>{title}</p>
+        <Text type='card-title'>{title}</Text>
         {swissFlag && (
           <img
             src={swissIcon}
@@ -57,7 +58,9 @@ const Service: React.FC<ServiceProps> = ({
           />
         )}
       </div>
-      <p className='text-primary opacity-75 text-sm md:text-lg leading-5'>{description}</p>
+      <Text type='light-text' className='leading-5'>
+        {description}
+      </Text>
     </div>
   )
 }

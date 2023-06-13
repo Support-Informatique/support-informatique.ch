@@ -1,6 +1,7 @@
 // components
 import SectionTitle from '@/components/SectionTitle'
 import Button from '@/components/Button'
+import Text from '@/components/Text'
 
 // utils
 import { navigateToSection } from '@/utils/accessibility'
@@ -17,7 +18,7 @@ const WhyUs: React.FC = () => {
         title='Une expertise à un prix adapté'
         background='peak'
       />
-      <p className='text-primary text-center w-full md:w-10/12 lg:w-9/12 xl:w-7/12 mx-auto px-6 text-xl mb-10'>
+      <Text className='text-center w-full mx-auto px-6 mb-10 md:w-10/12 lg:w-9/12 xl:w-7/12'>
         Nous sommes une équipe de jeunes passionnés, possédant une formation
         solide et une expérience précieuse en développement web. Parallèlement à
         notre activité, nous sommes engagés dans des études supérieures pour
@@ -27,7 +28,7 @@ const WhyUs: React.FC = () => {
         luxe, mais accessible à tous. Que vous soyez une start-up, une PME ou
         une grande entreprise, nous sommes prêts à concrétiser vos visions
         numériques avec passion et expertise.
-      </p>
+      </Text>
       <div className='flex flex-row flex-wrap gap-x-16 gap-y-4 justify-center'>
         <Button
           text='Nos services'
