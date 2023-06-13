@@ -1,21 +1,13 @@
-// react
-
-// css
-
-// functions
-
 // components
-// import Button from '@/components/Button'
-// import Footer from '@/components/sections/Footer'
-import LoadingScreen from '@/components/LoadingScreen'
-import Hero from '@/components/sections/Hero'
-import OurServices from '@/components/sections/OurServices'
-import OurTeam from '@/components/sections/OurTeam'
-import OurClients from '@/components/sections/OurClients'
-import OurTechnologies from '@/components/sections/OurTechnologies'
-import WhyUs from '@/components/sections/WhyUs'
-import Footer from '@/components/sections/Footer'
-import OurProjects from '@/components/sections/OurProjects'
+import LoadingScreen from '@/components/utils/LoadingScreen'
+import Hero from '@/components/sections/hero/Hero'
+import OurServices from '@/components/sections/ourservices/OurServices'
+import OurTeam from '@/components/sections/ourteam/OurTeam'
+import OurClients from '@/components/sections/ourclients/OurClients'
+import OurTechnologies from '@/components/sections/ourtechnologies/OurTechnologies'
+import WhyUs from '@/components/sections/whyus/WhyUs'
+import Footer from '@/components/sections/footer/Footer'
+import OurProjects from '@/components/sections/ourprojects/OurProjects'
 
 const DefaultSpacer: React.FC = () => {
   return (
@@ -40,9 +32,7 @@ const Home: React.FC = () => {
       <OurTechnologies />
       <DefaultSpacer />
       <OurProjects />
-      <br></br>
-      <br></br>
-      <br></br>
+      <br />
       <Footer />
     </div>
   )

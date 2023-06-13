@@ -4,7 +4,7 @@ import codeIcon from '@/assets/images/icon-code.svg'
 import cloudIcon from '@/assets/images/icon-cloud.svg'
 import helpIcon from '@/assets/images/icon-help.svg'
 import swissIcon from '@/assets/images/icon-swiss.png'
-import Text from '@/components/Text'
+import Text from '@/components/utils/Text'
 
 // type
 type Icon = 'layout' | 'code' | 'cloud' | 'help'

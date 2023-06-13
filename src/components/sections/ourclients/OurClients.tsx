@@ -1,6 +1,7 @@
 // components
-import LogoGrid from '@/components/LogoGrid'
+import LogoGrid from '@/components/sections/ourclients/LogoGrid'
 
+// images
 import logistock from '@/assets/images/clients/logistock.png'
 import capSurLaConfiance from '@/assets/images/clients/cap_sur_la_confiance.png'
 import stefaco from '@/assets/images/clients/stefaco.png'

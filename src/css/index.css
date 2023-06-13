@@ -89,6 +89,11 @@ html {
   background-color: #b8e9ee;
 }
 
+body {
+  /* This is changed to auto by the loading screen */
+  overflow: hidden
+}
+
 #root {
   @apply bg-background;
 }

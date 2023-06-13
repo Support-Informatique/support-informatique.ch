@@ -1,6 +1,6 @@
 // components
-import SectionTitle from '@/components/SectionTitle'
-import TeamMember from '@/components/TeamMember'
+import SectionTitle from '@/components/utils/SectionTitle'
+import TeamMember from '@/components/sections/ourteam/TeamMember'
 
 const OurTeam: React.FC = () => {
   return (

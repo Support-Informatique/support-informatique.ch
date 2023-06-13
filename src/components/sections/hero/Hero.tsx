@@ -4,7 +4,7 @@ import darkLogo from '@/assets/images/logo-support-informatique-dark.svg'
 import whiteBottomRounded from '@/assets/images/white-bottom-rounded.svg'
 
 // components
-import Button from '../Button'
+import Button from '@/components/utils/Button'
 
 // utils
 import { navigateToSection } from '@/utils/accessibility'

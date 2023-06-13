@@ -1,7 +1,7 @@
 // components
-import SectionTitle from '@/components/SectionTitle'
-import Button from '@/components/Button'
-import Text from '@/components/Text'
+import SectionTitle from '@/components/utils/SectionTitle'
+import Button from '@/components/utils/Button'
+import Text from '@/components/utils/Text'
 
 // utils
 import { navigateToSection } from '@/utils/accessibility'
@@ -9,6 +9,10 @@ import { navigateToSection } from '@/utils/accessibility'
 const WhyUs: React.FC = () => {
   const scrollToOurServices = () => {
     navigateToSection('our-services')
+  }
+
+  const mailTo = () => {
+    window.open('mailto:contact@support-informatique.ch', '_blank')
   }
 
   return (
@@ -35,7 +39,7 @@ const WhyUs: React.FC = () => {
           type='filled'
           onClick={scrollToOurServices}
         />
-        <Button text='Nous contacter' type='outlined' />
+        <Button text='Nous contacter' type='outlined' onClick={mailTo}/>
       </div>
     </div>
   )

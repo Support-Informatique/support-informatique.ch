@@ -2,8 +2,8 @@
 import roundedCardCorner from '@/assets/images/rounded-card-corner.svg'
 
 // components
-import Text from '@/components/Text'
-import Button from '@/components/Button'
+import Text from '@/components/utils/Text'
+import Button from '@/components/utils/Button'
 import { IoOpenOutline } from 'react-icons/io5'
 
 // interface

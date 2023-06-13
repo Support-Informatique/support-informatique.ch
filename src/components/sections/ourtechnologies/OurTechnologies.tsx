@@ -1,5 +1,5 @@
 // components
-import InfiniteBanner from '@/components/InfiniteBanner'
+import InfiniteBanner from '@/components/sections/ourtechnologies/InfiniteBanner'
 
 // images
 import git from '@/assets/images/technos/git.png'

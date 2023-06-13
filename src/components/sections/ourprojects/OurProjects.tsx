@@ -5,8 +5,8 @@ import projectPreviewCapSurLaConfianceMobile from '@/assets/images/project-previ
 import projectPreviewLogistock from '@/assets/images/project-preview-logistock.png'
 
 // components
-import SectionTitle from '@/components/SectionTitle'
-import Project from '@/components/Project'
+import SectionTitle from '@/components/utils/SectionTitle'
+import Project from '@/components/sections/ourprojects/Project'
 
 const projects = [
   {

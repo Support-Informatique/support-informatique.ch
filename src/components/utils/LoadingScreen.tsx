@@ -12,6 +12,7 @@ import { heroImages } from '@/data/data'
 const LoadingScreen: React.FC = () => {
   // states
   const [loading, setLoading] = useState(true)
+  const [showOverlay, setShowOverlay] = useState(true)
   const [progress, setProgress] = useState(0)
 
   const progressPercent = (progress / heroImages.length) * 100
@@ -39,34 +40,46 @@ const LoadingScreen: React.FC = () => {
       document.body.style.overflow = 'auto'
     }, 1000)
   }
+
   useEffect(() => {
     document.body.style.overflow = 'hidden'
     handleLoadImages(heroImages).catch(console.error)
   }, [heroImages])
 
-  return (
-    <motion.div
-      className='fixed inset-0 z-50 bg-background text-primary flex flex-col justify-center items-center'
-      key='loading-screen'
-      initial={{ opacity: 1 }}
-      animate={{ opacity: loading ? 1 : 0 }}
-      transition={{ duration: 0.4 }}
-    >
-      <img
-        src={darkLogo}
-        alt='logo'
-        className='w-80 md:w-96 select-none pointer-events-none'
-      />
+  useEffect(() => {
+    if (!loading) {
+      setTimeout(() => {
+        setShowOverlay(false)
+        document.body.style.overflow = 'auto'
+      }, 450)
+    }
+  }, [loading])
 
-      <div className='w-80 md:w-96 px-4 h-1 mt-5'>
-        <motion.div
-          className='h-full bg-primary rounded-full'
-          initial={{ width: 0 }}
-          animate={{ width: `${progressPercent}%` }}
-          transition={{ duration: 1 }}
+  return (
+    showOverlay && (
+      <motion.div
+        className='fixed inset-0 z-50 bg-background text-primary flex flex-col justify-center items-center'
+        key='loading-screen'
+        initial={{ opacity: 1 }}
+        animate={{ opacity: loading ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <img
+          src={darkLogo}
+          alt='logo'
+          className='w-80 md:w-96 select-none pointer-events-none'
         />
-      </div>
-    </motion.div>
+
+        <div className='w-80 md:w-96 px-4 h-1 mt-5'>
+          <motion.div
+            className='h-full bg-primary rounded-full'
+            initial={{ width: 0 }}
+            animate={{ width: `${progressPercent}%` }}
+            transition={{ duration: 1 }}
+          />
+        </div>
+      </motion.div>
+    )
   )
 }
 
