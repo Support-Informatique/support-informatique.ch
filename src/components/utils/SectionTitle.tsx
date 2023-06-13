@@ -1,3 +1,6 @@
+// components
+import { motion } from 'framer-motion'
+
 // images
 import peak from '@/assets/images/line-mountains-peak.svg'
 import horizon from '@/assets/images/line-mountains-horizon.svg'
@@ -26,6 +29,19 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => {
   const bgImage = getBackground(background)
   const bgImageClass = background ? `bg-line-mountains-${background}` : ''
+  const animation = {
+    offscreen: {
+      opacity: 0,
+      y: 20
+    },
+    onscreen: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6
+      }
+    }
+  }
 
   return (
     <div
@@ -38,16 +54,20 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           className={'invisible max-w-fit min-h-[200px] md:min-h-[275px]'}
         />
       )}
-      <div
+      <motion.div
         className={`flex flex-col items-center justify-center gap-y-3 ${
           bgImage ? 'absolute' : ''
         } w-full px-3`}
+        initial='offscreen'
+        whileInView='onscreen'
+        variants={animation}
+        viewport={{ once: true, amount: 0.8 }}
       >
         <Text type='section-subtitle'>{subtitle}</Text>
         <Text type='section-title' className={'text-center'}>
           {title}
         </Text>
-      </div>
+      </motion.div>
     </div>
   )
 }

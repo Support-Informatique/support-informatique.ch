@@ -1,3 +1,6 @@
+// components
+import { motion } from 'framer-motion'
+
 // images
 import layoutIcon from '@/assets/images/icon-layout.svg'
 import codeIcon from '@/assets/images/icon-code.svg'
@@ -40,9 +43,28 @@ const Service: React.FC<ServiceProps> = ({
   swissFlag = false
 }) => {
   const iconImg = getIcon(icon)
+  const animation = {
+    offscreen: {
+      opacity: 0,
+      y: 20
+    },
+    onscreen: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6
+      }
+    }
+  }
 
   return (
-    <div className='flex flex-col border-[1px] border-black border-opacity-20 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 rounded-lg gap-3 p-5'>
+    <motion.div
+      initial='offscreen'
+      whileInView='onscreen'
+      variants={animation}
+      viewport={{ once: true, amount: 0.8 }}
+      className='flex flex-col border-[1px] border-black border-opacity-20 w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12 rounded-lg gap-3 p-5'
+    >
       <img
         src={iconImg}
         alt='layoutIcon'
@@ -61,7 +83,7 @@ const Service: React.FC<ServiceProps> = ({
       <Text type='lightblue-text' className='leading-5'>
         {description}
       </Text>
-    </div>
+    </motion.div>
   )
 }
 
