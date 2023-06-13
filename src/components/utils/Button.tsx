@@ -32,7 +32,7 @@ const getSizeClass = (size: string) => {
       return 'text-sm min-w-[150px] py-3 rounded-[6px] font-bold'
     case 'md':
     default:
-      return 'text-base md:text-xl min-w-[250px] py-4 rounded-[10px] font-black'
+      return 'text-base md:text-xl min-w-[250px] py-4 hover:rounded-[20px]  rounded-[10px] font-black'
   }
 }
 
@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
   const sizeClass = getSizeClass(size)
   return (
     <button
-      className={`${colorClass} ${sizeClass} z-10 drop-shadow-button w-fit px-5 tracking-widest flex flex-row justify-center items-center gap-2`}
+      className={`${colorClass} ${sizeClass} z-10 drop-shadow-button w-fit px-5 tracking-widest flex flex-row justify-center items-center gap-2 transition-all duration-500`}
       onClick={onClick}
       onKeyDown={onEnter}
     >
