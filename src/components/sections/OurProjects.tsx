@@ -1,6 +1,7 @@
 // images
 import projectPreviewSarigai from '@/assets/images/project-preview-sarigai.png'
 import projectPreviewCapSurLaConfiance from '@/assets/images/project-preview-cap-sur-la-confiance.png'
+import projectPreviewCapSurLaConfianceMobile from '@/assets/images/project-preview-cap-sur-la-confiance-mobile.png'
 import projectPreviewLogistock from '@/assets/images/project-preview-logistock.png'
 
 // components
@@ -24,6 +25,7 @@ const projects = [
       'Jeu mobile permettant de développer et booster sa confiance en soi.'
     ],
     image: projectPreviewCapSurLaConfiance,
+    imageMobile: projectPreviewCapSurLaConfianceMobile,
     link: 'https://app.capsurlaconfiance.ch'
   },
   {
@@ -50,6 +52,7 @@ const OurProjects: React.FC = () => {
             description={project.description}
             image={project.image}
             link={project.link}
+            imageMobile={project.imageMobile}
           />
         ))}
       </div>

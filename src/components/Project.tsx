@@ -11,6 +11,7 @@ interface ProjectProps {
   title: string
   description: string[]
   image: string
+  imageMobile?: string
   link: string
   order?: 'left' | 'right'
 }
@@ -28,6 +29,7 @@ const Project: React.FC<ProjectProps> = ({
   title,
   description,
   image,
+  imageMobile,
   link,
   order = 'left'
 }) => {
@@ -35,14 +37,23 @@ const Project: React.FC<ProjectProps> = ({
   const openLink = () => {
     window.open(link, '_blank')
   }
+
+  const isMobile = window.innerWidth < 768
+  const getImage = () => {
+    if (isMobile && imageMobile) {
+      return imageMobile
+    }
+    return image
+  }
+
   return (
     <div
       className={`${
-        order === 'left' ? 'flex-row' : 'flex-row-reverse'
-      } z-10 flex flex-row flex-wrap justify-between border border-black border-opacity-20 bg-lightCard rounded-[20px] w-8/12 relative p-5`}
+        order === 'left' ? 'xl:flex-row' : 'xl:flex-row-reverse'
+      } z-10 flex flex-wrap justify-between flex-col-reverse border border-black border-opacity-20 gap-y-8 bg-lightCard rounded-[20px] w-11/12 lg:w-10/12 xl:w-8/12 relative p-5`}
     >
-      <img src={image} className='w-4/6' />
-      <div className='flex flex-col justify-center items-center w-1/6 flex-grow gap-y-4 px-12 text-center'>
+      <img src={getImage()} className='w-full xl:w-4/6 object-contain z-10' />
+      <div className='flex flex-col justify-center items-center w-full xl:w-1/6 flex-grow gap-y-4 px-12 text-center'>
         <Text type='card-title' className='font-black'>
           {title}
         </Text>
