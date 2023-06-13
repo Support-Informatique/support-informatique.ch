@@ -7,7 +7,7 @@ import avatar3 from '@/assets/images/blue-avatar-3.svg'
 import { IoLogoLinkedin } from 'react-icons/io'
 import { SiTypescript } from 'react-icons/si'
 import { FaReact, FaVuejs, FaPython } from 'react-icons/fa'
-import Text from '@/components/Text'
+import Text from '@/components/utils/Text'
 
 // types
 type Tech = 'reactjs' | 'vuejs' | 'typescript' | 'python'

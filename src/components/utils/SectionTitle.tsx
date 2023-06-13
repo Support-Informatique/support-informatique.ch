@@ -1,7 +1,7 @@
 // images
 import peak from '@/assets/images/line-mountains-peak.svg'
 import horizon from '@/assets/images/line-mountains-horizon.svg'
-import Text from '@/components/Text'
+import Text from '@/components/utils/Text'
 
 // interfaces
 interface SectionTitleProps {

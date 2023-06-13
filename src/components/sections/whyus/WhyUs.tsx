@@ -1,7 +1,7 @@
 // components
-import SectionTitle from '@/components/SectionTitle'
-import Button from '@/components/Button'
-import Text from '@/components/Text'
+import SectionTitle from '@/components/utils/SectionTitle'
+import Button from '@/components/utils/Button'
+import Text from '@/components/utils/Text'
 
 // utils
 import { navigateToSection } from '@/utils/accessibility'

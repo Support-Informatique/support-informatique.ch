@@ -1,6 +1,6 @@
 // components
-import SectionTitle from '@/components/SectionTitle'
-import Service from '@/components/Service'
+import SectionTitle from '@/components/utils/SectionTitle'
+import Service from '@/components/sections/ourservices/Service'
 
 const OurServices: React.FC = () => {
   return (
