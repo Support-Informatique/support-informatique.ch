@@ -36,9 +36,11 @@ const LoadingScreen: React.FC = () => {
     await Promise.all(urls.map(handleLoadImage))
     setTimeout(() => {
       setLoading(false)
+      document.body.style.overflow = 'auto'
     }, 1000)
   }
   useEffect(() => {
+    document.body.style.overflow = 'hidden'
     handleLoadImages(heroImages).catch(console.error)
   }, [heroImages])
 
