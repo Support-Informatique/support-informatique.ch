@@ -1,11 +1,5 @@
-// react
-import { useRef } from 'react'
-
 // components
 import { motion } from 'framer-motion'
-
-// functions
-import { useInView } from 'framer-motion'
 
 // interfaces
 interface LogoGridProps {
@@ -14,21 +8,29 @@ interface LogoGridProps {
 }
 
 const LogoGrid: React.FC<LogoGridProps> = ({ className = '', logos }) => {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref) ? 1 : 0
+  const animation = {
+    offscreen: {
+      opacity: 0,
+      y: 20
+    },
+    onscreen: {
+      opacity: 1,
+      y: 0
+    }
+  }
 
   return (
     <div
       className={`grid grid-cols-3 xl:grid-cols-6 gap-y-8 justify-items-center mix-blend-darken select-none pointer-events-none ${className}`}
-      ref={ref}
     >
       {logos.map((logo, index) => (
         <motion.div
-          key={`logo-${index}-${isInView}`}
+          key={`logo-${index}`}
           className='flex justify-center items-center'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: index * 0.08 }}
+          initial='offscreen'
+          whileInView='onscreen'
+          variants={animation}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <img
             src={logo}
