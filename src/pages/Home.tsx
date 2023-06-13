@@ -32,6 +32,7 @@ const Home: React.FC = () => {
       <OurTechnologies />
       <DefaultSpacer />
       <OurProjects />
+      <br />
       <Footer />
     </div>
   )

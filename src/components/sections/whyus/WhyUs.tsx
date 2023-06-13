@@ -11,6 +11,10 @@ const WhyUs: React.FC = () => {
     navigateToSection('our-services')
   }
 
+  const mailTo = () => {
+    window.open('mailto:contact@support-informatique.ch', '_blank')
+  }
+
   return (
     <div id='why-us'>
       <SectionTitle
@@ -35,7 +39,7 @@ const WhyUs: React.FC = () => {
           type='filled'
           onClick={scrollToOurServices}
         />
-        <Button text='Nous contacter' type='outlined' />
+        <Button text='Nous contacter' type='outlined' onClick={mailTo}/>
       </div>
     </div>
   )
