@@ -7,6 +7,7 @@
 // components
 // import Button from '@/components/Button'
 // import Footer from '@/components/sections/Footer'
+import LoadingScreen from '@/components/LoadingScreen'
 import Hero from '@/components/sections/Hero'
 import OurServices from '@/components/sections/OurServices'
 import OurTeam from '@/components/sections/OurTeam'
@@ -25,6 +26,7 @@ const DefaultSpacer: React.FC = () => {
 const Home: React.FC = () => {
   return (
     <div>
+      <LoadingScreen />
       <Hero />
       <div className='bg-background h-[10vh] md:h-[60vh] lg:h-[45vh] xl:h-[26vh]' />
       <WhyUs />
