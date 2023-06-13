@@ -1,3 +1,6 @@
+// components
+import type { IconType } from 'react-icons/lib'
+
 // functions
 import { onEnter } from '@/utils/accessibility'
 
@@ -5,25 +8,50 @@ import { onEnter } from '@/utils/accessibility'
 interface ButtonProps {
   onClick?: () => void
   text?: string
-  type?: 'filled' | 'outlined'
+  type?: 'filled' | 'outlined' | 'accent'
+  icon?: IconType
+  size?: 'sm' | 'md'
+}
+
+// functions
+const getColorClass = (type: string) => {
+  switch (type) {
+    case 'outlined':
+      return 'text-primary border-primary border-2 bg-background'
+    case 'accent':
+      return 'text-white bg-secondary'
+    case 'filled':
+    default:
+      return 'text-white bg-primary'
+  }
+}
+
+const getSizeClass = (size: string) => {
+  switch (size) {
+    case 'sm':
+      return 'text-sm min-w-[150px] py-3 rounded-[6px] font-bold'
+    case 'md':
+    default:
+      return 'text-base md:text-xl min-w-[250px] py-4 rounded-[10px] font-black'
+  }
 }
 
 const Button: React.FC<ButtonProps> = ({
   onClick = () => {},
   text = 'Button',
-  type = 'filled'
+  type = 'filled',
+  icon = null,
+  size = 'md'
 }) => {
-  const customClass =
-    type === 'filled'
-      ? 'text-white bg-primary'
-      : 'text-primary border-primary border-2 bg-background'
-
+  const colorClass = getColorClass(type)
+  const sizeClass = getSizeClass(size)
   return (
     <button
-      className={`${customClass} drop-shadow-button rounded-[10px] text-base md:text-xl w-fit min-w-[300px] font-black py-4 px-5 tracking-widest`}
+      className={`${colorClass} ${sizeClass} z-10 drop-shadow-button w-fit px-5 tracking-widest flex flex-row justify-center items-center gap-2`}
       onClick={onClick}
       onKeyDown={onEnter}
     >
+      {icon && <span className='text-xl'>{icon({})}</span>}
       {text}
     </button>
   )

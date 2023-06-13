@@ -4,7 +4,8 @@ interface TextProps {
     | 'section-title'
     | 'section-subtitle'
     | 'card-title'
-    | 'light-text'
+    | 'lightblue-text'
+    | 'lightgray-text'
   children: React.ReactNode
   className?: string
 }
@@ -21,7 +22,8 @@ const Text: React.FC<TextProps> = ({
     'section-subtitle':
       'text-primary text-sm sm:text-base md:text-md lg:text-lg xl:text-xl uppercase font-black',
     'card-title': 'text-darkText font-bold text-xl sm:text-2xl',
-    'light-text': 'text-primary opacity-75 text-md md:text-lg '
+    'lightblue-text': 'text-primary opacity-75 text-md md:text-lg',
+    'lightgray-text': 'text-lightText text-md sm:text-lg'
   }
 
   return <p className={`${textSize[type]} ${className}`}>{children}</p>

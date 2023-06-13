@@ -14,6 +14,7 @@ import OurClients from '@/components/sections/OurClients'
 import OurTechnologies from '@/components/sections/OurTechnologies'
 import WhyUs from '@/components/sections/WhyUs'
 import Footer from '@/components/sections/Footer'
+import OurProjects from '@/components/sections/OurProjects'
 
 const DefaultSpacer: React.FC = () => {
   return (
@@ -35,6 +36,8 @@ const Home: React.FC = () => {
       <OurServices />
       <DefaultSpacer />
       <OurTechnologies />
+      <DefaultSpacer />
+      <OurProjects />
       <br></br>
       <br></br>
       <br></br>

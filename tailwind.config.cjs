@@ -9,7 +9,8 @@ module.exports = {
         darkText: '#011430',
         lightText: '#01143080',
         accentText: '#011430BF',
-        background: '#F2F4F6'
+        background: '#F2F4F6',
+        lightCard: '#B7EFFF1F'
       },
       fontWeight: {
         black: '900'
@@ -20,7 +21,8 @@ module.exports = {
           "url('@/assets/images/line-mountains-horizon.svg')",
         mountains: "url('@/assets/images/blue-mountains-with-lake.png')",
         footer: "url('@/assets/images/blue-mountains-with-lake-footer.png')",
-        "footer-mobile": "url('@/assets/images/blue-mountains-with-lake-footer-mobile.png')"
+        'footer-mobile':
+          "url('@/assets/images/blue-mountains-with-lake-footer-mobile.png')"
       },
       dropShadow: {
         button: '2px 2px 4px rgba(19, 47, 85, 0.3)',

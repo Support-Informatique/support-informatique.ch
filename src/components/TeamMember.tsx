@@ -67,14 +67,26 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   const techIconsList = getTechIconsList(techs)
 
   return (
-    <div className='border border-lightText flex flex-col sm:flex-row justify-center sm:justify-start items-center w-[75vw] sm:w-[65vw] md:w-[28rem] rounded-[20px] py-4 px-6 gap-2 sm:gap-8 mx-3'>
-      <img src={avatarImage} alt='avatar' className='object-contain w-3/12 ' />
+    <div className='border border-lightText flex flex-col sm:flex-row justify-center sm:justify-start items-center w-[75vw] sm:w-[65vw] md:w-[28rem] rounded-[20px] py-6 px-6 gap-2 sm:gap-8 mx-3'>
+      <img
+        src={avatarImage}
+        alt='avatar'
+        className='object-contain w-3/12'
+      />
       <div className='flex flex-col justify-center'>
-        <Text type='card-title' className='text-center sm:text-left'>{name}</Text>
+        <Text
+          type='card-title'
+          className='text-center sm:text-left'
+        >
+          {name}
+        </Text>
         <div className='flex flex-row gap-x-1 justify-center sm:justify-start'>
-          <p className='text-lightText text-md sm:text-lg text-center sm:text-left'>
+          <Text
+            type='lightgray-text'
+            className='text-center sm:text-left'
+          >
             {title}
-          </p>
+          </Text>
           {linkedin && (
             <a
               href={linkedin}

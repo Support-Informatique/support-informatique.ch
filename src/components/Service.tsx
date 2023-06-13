@@ -58,7 +58,7 @@ const Service: React.FC<ServiceProps> = ({
           />
         )}
       </div>
-      <Text type='light-text' className='leading-5'>
+      <Text type='lightblue-text' className='leading-5'>
         {description}
       </Text>
     </div>
