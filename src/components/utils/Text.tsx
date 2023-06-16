@@ -26,6 +26,14 @@ const Text: React.FC<TextProps> = ({
     'lightgray-text': 'text-lightText text-md sm:text-lg'
   }
 
+  if (type === 'section-title') {
+    return <h1 className={`${textSize[type]} ${className}`}>{children}</h1>
+  }
+
+  if (type === 'section-subtitle') {
+    return <h2 className={`${textSize[type]} ${className}`}>{children}</h2>
+  }
+
   return <p className={`${textSize[type]} ${className}`}>{children}</p>
 }
 
