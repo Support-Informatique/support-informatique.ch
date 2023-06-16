@@ -68,7 +68,7 @@ const LoadingScreen: React.FC = () => {
       >
         <img
           src={darkLogo}
-          alt='logo'
+          alt='support informatique blue logo'
           className='w-80 md:w-96 select-none pointer-events-none'
         />
 

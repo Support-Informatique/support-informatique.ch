@@ -39,7 +39,7 @@ const InfiniteBanner: React.FC<InfiniteBannerProps> = ({
       <HorizontalTicker duration={20000 / speed} reverse={reverse}>
         {images.map((image, index) => (
           <motion.div key={index} className={containerClass}>
-            <img className='h-8 md:h-10' src={image} />
+            <img className='h-8 md:h-10' src={image} alt='technology cyan logo' />
           </motion.div>
         ))}
       </HorizontalTicker>

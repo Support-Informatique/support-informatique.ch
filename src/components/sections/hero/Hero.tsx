@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           />
         </div>
         <div className='flex flex-col justify-around items-center h-full gap-y-40 overflow-hidden pb-15 md:pb-0'>
-          <img src={darkLogo} alt='logo' className='h-1/5 sm:h-1/4' />
+          <img src={darkLogo} alt='support informatique blue logo' className='h-1/5 sm:h-1/4' />
           <Button text='Explorer' onClick={scrollToWhyUs} />
         </div>
         <img

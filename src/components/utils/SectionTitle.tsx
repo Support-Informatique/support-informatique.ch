@@ -50,7 +50,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       {bgImage && (
         <img
           src={bgImage}
-          alt='bgImage'
+          alt='lines mountains image'
           className={'invisible max-w-fit min-h-[200px] md:min-h-[275px]'}
         />
       )}
