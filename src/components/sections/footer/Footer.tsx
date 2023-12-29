@@ -44,6 +44,7 @@ const Footer: React.FC = () => {
           >
             contact@support-informatique.ch
           </a>
+          <p className='font-normal'>Fondé par Lionel Ding et Carlos Rouibaa</p>
         </div>
       </div>
       <div className='bg-background w-full p-2'>
