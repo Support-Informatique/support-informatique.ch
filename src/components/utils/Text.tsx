@@ -18,9 +18,9 @@ const Text: React.FC<TextProps> = ({
   const textSize = {
     'primary-text': 'text-primary text-md md:text-lg lg:text-xl',
     'section-title':
-      'text-darkText text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black',
+      'text-darkText text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold',
     'section-subtitle':
-      'text-primary text-sm sm:text-base md:text-md lg:text-lg xl:text-xl uppercase font-black',
+      'text-primary text-sm sm:text-base md:text-md lg:text-lg xl:text-xl uppercase font-extrabold',
     'card-title': 'text-darkText font-bold text-xl sm:text-2xl',
     'lightblue-text': 'text-primary opacity-75 text-md md:text-lg',
     'lightgray-text': 'text-lightText text-md sm:text-lg'
