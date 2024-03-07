@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className='bg-background w-full p-2'>
-        <p className='text-darkText font-bold md:font-black text-center text-sm md:text-base'>
+        <p className='text-darkText font-bold md:font-extrabold text-center text-sm md:text-base'>
           © 2023 Support-Informatique - All Rights Reserved.
         </p>
       </div>
