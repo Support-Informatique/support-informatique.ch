@@ -12,7 +12,7 @@ const WhyUs: React.FC = () => {
   }
 
   const mailTo = () => {
-    window.open('mailto:contact@support-informatique.ch', '_blank')
+    window.open('mailto:contact@codevs.ch', '_blank')
   }
 
   return (
@@ -39,7 +39,7 @@ const WhyUs: React.FC = () => {
           type='filled'
           onClick={scrollToOurServices}
         />
-        <Button text='Nous contacter' type='outlined' onClick={mailTo}/>
+        <Button text='Nous contacter' type='outlined' onClick={mailTo} />
       </div>
     </div>
   )

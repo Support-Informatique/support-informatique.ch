@@ -5,7 +5,7 @@ import Button from '@/components/utils/Button'
 
 const OurServices: React.FC = () => {
   const mailTo = () => {
-    window.open('mailto:contact@support-informatique.ch', '_blank')
+    window.open('mailto:contact@codevs.ch', '_blank')
   }
 
   return (

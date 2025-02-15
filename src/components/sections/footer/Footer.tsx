@@ -38,18 +38,14 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <p className='font-normal'>1700 Fribourg, Suisse</p>
-          <a
-            className='text-secondary'
-            href='mailto:contact@support-informatique.ch'
-          >
-            contact@support-informatique.ch
+          <a className='text-secondary' href='mailto:contact@codevs.ch'>
+            contact@codevs.ch
           </a>
-          <p className='font-normal'>Fondé par Lionel Ding et Carlos Rouibaa</p>
         </div>
       </div>
       <div className='bg-background w-full p-2'>
         <p className='text-darkText font-bold md:font-extrabold text-center text-sm md:text-base'>
-          © 2023 Support-Informatique - All Rights Reserved.
+          © {new Date().getFullYear()} CODEVS Sàrl. Tous droits réservés.
         </p>
       </div>
     </div>
