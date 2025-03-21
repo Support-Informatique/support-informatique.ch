@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           <div className='flex flex-row gap-x-2 mb-4'>
             <a
               className='hover:scale-110 transform transition-all'
-              href='https://www.linkedin.com/company/supportinformatique/'
+              href='https://www.linkedin.com/company/codevs-ch/'
             >
               <BsLinkedin className='text-xl md:text-2xl' />
             </a>
